@@ -9,8 +9,17 @@
 }
 .about-hd {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.line-design {
+  width: 4rem;
+  height: 0.4rem;
+  background-color: var(--secondary-color);
+  border-radius: 0.5rem;
 }
 .about-hd p {
   font-size: 2.2rem;
@@ -43,5 +52,46 @@
   gap: 0.6rem;
 }
 .hd svg {
+  color: var(--secondary-color);
+}
+
+.skills-expertise-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+.skills-hd-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.skills-hd {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: white;
+}
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  margin-top: 1rem;
+}
+.skill {
+  display: flex;
+  padding: 0.4rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.4rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: all 0.4s ease;
+}
+.skill:hover {
+  border: 1px solid var(--secondary-color);
   color: var(--secondary-color);
 }
