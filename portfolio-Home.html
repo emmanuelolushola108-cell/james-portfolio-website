@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="styles/general.css" />
     <link rel="stylesheet" href="styles/hero-section.css" />
     <link rel="stylesheet" href="styles/about-section.css" />
+    <link rel="stylesheet" href="styles/contact-section.css" />
+    <link rel="stylesheet" href="styles/projects-section.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,6 +25,13 @@
         <p class="logo">JamesDev</p>
       </div>
       <div class="middle-section-header">
+        <nav class="tablet-view">
+          <ul>
+            <li><a href="">About me</a></li>
+            <li><a href="">Skills</a></li>
+            <li><a href="">Projects</a></li>
+          </ul>
+        </nav>
         <div class="button-con3">
           <button class="harmburger-menu">Navigate</button>
           <div class="right-arrow">
@@ -43,26 +53,27 @@
           </div>
         </div>
       </div>
-      <!-- <div class="right-section-header">
-        <button class="contact-cta">Contact me</button>
-      </div> -->
+      <div class="right-section">
+        <button class="header-cta">Contact me</button>
+      </div>
     </header>
+
     <section class="hero-section">
       <div class="hero-section-profiles">
         <div class="image-overlay"></div>
         <img class="my-image" src="images/profile.png" alt="" />
         <div class="hero-intro-hd">
-          <p style="color: white">
+          <p class="intro-hd" style="color: white">
             Hi, I'm <strong class="name-strong">James Emmy</strong>
           </p>
         </div>
         <div class="hero-intro-sub-hd">
-          <p style="color: rgb(235, 233, 233)">
+          <p class="intro-sub" style="color: rgb(235, 233, 233)">
             Full Stack JavaScript Developer
           </p>
         </div>
         <div class="hero-intro-bd">
-          <p style="color: rgb(225, 226, 225)">
+          <p class="intro-bd" style="color: rgb(225, 226, 225)">
             Building scalable web applications with modern technologies.
             Passionate about creating seamless user experiences and solving
             complex problems through clean, efficient code.
@@ -154,89 +165,113 @@
         <p>About Me</p>
         <div class="line-design"></div>
       </div>
-      <div class="about-flex">
-        <div class="hd">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-code-xml-icon lucide-code-xml"
-          >
-            <path d="m18 16 4-4-4-4" />
-            <path d="m6 8-4 4 4 4" />
-            <path d="m14.5 4-5 16" />
-          </svg>
-          <p class="about-flex-hd">Clean Code</p>
+      <div class="grid-display-1024-max">
+        <div class="right-hand-flex">
+          <div class="text-box-1024-max">
+            <p>
+              I'm a Full Stack JavaScript Developer with a passion for building
+              modern web applications that make a difference. With expertise
+              spanning frontend and backend development, I create seamless
+              digital experiences from concept to deployment
+            </p>
+          </div>
+          <div class="text-box-1024-max">
+            <p>
+              I'm a Full Stack JavaScript Developer with a passion for building
+              modern web applications that make a difference. With expertise
+              spanning frontend and backend development, I create seamless
+              digital experiences from concept to deployment
+            </p>
+          </div>
+          <div class="text-box-1024-max">
+            <p>
+              I'm a Full Stack JavaScript Developer with a passion for building
+              modern web applications that make a difference. With expertise
+              spanning frontend and backend development, I create seamless
+              digital experiences from concept to deployment
+            </p>
+          </div>
         </div>
-        <p class="about-flex-bd">
-          I'm a Full Stack JavaScript Developer with a passion for building
-          modern web applications that make a difference. With expertise
-          spanning frontend and backend development, I create seamless digital
-          experiences from concept to deployment.
-        </p>
-      </div>
+        <div class="left-hand-flex">
+          <div class="about-flex">
+            <div class="hd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-code-xml-icon lucide-code-xml"
+              >
+                <path d="m18 16 4-4-4-4" />
+                <path d="m6 8-4 4 4 4" />
+                <path d="m14.5 4-5 16" />
+              </svg>
+              <p class="about-flex-hd">Clean Code</p>
+            </div>
+            <p class="about-flex-bd">
+              Writing maintainable, scalable solutions with best practices
+            </p>
+          </div>
 
-      <div class="about-flex">
-        <div class="hd">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-scooter-icon lucide-scooter"
-          >
-            <path d="M21 4h-3.5l2 11.05" />
-            <path
-              d="M6.95 17h5.142c.523 0 .95-.406 1.063-.916a6.5 6.5 0 0 1 5.345-5.009"
-            />
-            <circle cx="19.5" cy="17.5" r="2.5" />
-            <circle cx="4.5" cy="17.5" r="2.5" />
-          </svg>
-          <p class="about-flex-hd">Fast Delivery</p>
+          <div class="about-flex">
+            <div class="hd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-scooter-icon lucide-scooter"
+              >
+                <path d="M21 4h-3.5l2 11.05" />
+                <path
+                  d="M6.95 17h5.142c.523 0 .95-.406 1.063-.916a6.5 6.5 0 0 1 5.345-5.009"
+                />
+                <circle cx="19.5" cy="17.5" r="2.5" />
+                <circle cx="4.5" cy="17.5" r="2.5" />
+              </svg>
+              <p class="about-flex-hd">Fast Delivery</p>
+            </div>
+            <p class="about-flex-bd">
+              Shipping features quickly without compromising quality
+            </p>
+          </div>
+
+          <div class="about-flex">
+            <div class="hd">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-users-icon lucide-users"
+              >
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                <path d="M16 3.128a4 4 0 0 1 0 7.744" />
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                <circle cx="9" cy="7" r="4" />
+              </svg>
+              <p class="about-flex-hd">Collaboration</p>
+            </div>
+            <p class="about-flex-bd">
+              Working effectively with cross-functional teams
+            </p>
+          </div>
         </div>
-        <p class="about-flex-bd">
-          I specialize in the JavaScript ecosystem, leveraging React, Node.js,
-          and MongoDB to build robust, scalable solutions. My approach combines
-          technical excellence with a user-first mindset to deliver products
-          that users love.
-        </p>
-      </div>
-      <div class="about-flex">
-        <div class="hd">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="lucide lucide-users-icon lucide-users"
-          >
-            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-            <path d="M16 3.128a4 4 0 0 1 0 7.744" />
-            <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
-            <circle cx="9" cy="7" r="4" />
-          </svg>
-          <p class="about-flex-hd">Collaboration</p>
-        </div>
-        <p class="about-flex-bd">
-          When I'm not coding, I'm exploring new technologies, contributing to
-          open source, or sharing knowledge with the developer community.
-        </p>
       </div>
 
       <div class="skills-expertise-con">
@@ -270,6 +305,538 @@
             <p>Tailwind</p>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="expertises-con">
+      <div class="expertise-meters">
+        <div class="expertise-header">
+          <p>Frontend</p>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>JavaScript</p>
+            <p class="percentage">95%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>React</p>
+            <p class="percentage">90%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure2"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>TypeScript</p>
+            <p class="percentage">85%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure3"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>HTML/CSS</p>
+            <p class="percentage">90%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure4"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Tailwind CSS</p>
+            <p class="percentage">88%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure5"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expertise-meters">
+        <div class="expertise-header">
+          <p>Backend</p>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Node.js</p>
+            <p class="percentage">88%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure6"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Express</p>
+            <p class="percentage">85%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure7"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>MongoDB</p>
+            <p class="percentage">82%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure8"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>RESTful APIs</p>
+            <p class="percentage">90%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure9"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>GraphQL</p>
+            <p class="percentage">75%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure10"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="expertise-meters">
+        <div class="expertise-header">
+          <p>Tools and Others</p>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Git</p>
+            <p class="percentage">92%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure11"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Docker</p>
+            <p class="percentage">78%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure12"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>AWS</p>
+            <p class="percentage">75%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure13"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Jest Testing</p>
+            <p class="percentage">80%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure14"></div>
+          </div>
+        </div>
+        <div class="meter-con">
+          <div class="meter-hd-con">
+            <p>Tailwind CSS</p>
+            <p class="percentage">85%</p>
+          </div>
+          <div class="meter">
+            <div class="meter-measure15"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="featured-projects">
+      <div class="projects-header">
+        <p class="projects-hd">Featured Projects</p>
+        <div class="line-design"></div>
+      </div>
+      <div class="grid-container">
+        <div class="projects-briefs">
+          <div class="project-brief-con"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">E-Commerce Platform</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                A full-stack e-commerce solution with payment integration,
+                real-time inventory management, and admin dashboard.
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">React</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">MongoDB</button>
+              <button class="tools-box">Stripe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-briefs">
+          <div class="project-brief-con2"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">Task Management Dashboard</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                Project management tool with drag-and-drop interface, team
+                collaboration features, and analytics.
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">React</button>
+              <button class="tools-box">TypeScript</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">PostgreSQL</button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-briefs">
+          <div class="project-brief-con3"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">Fitness Tracking App</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                Mobile-first fitness tracker with workout plans, progress
+                tracking, and social features.
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">Native React</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">Firebass</button>
+              <button class="tools-box">Express</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-briefs">
+          <div class="project-brief-con"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">E-Commerce Platform</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                A full-stack e-commerce solution with payment integration,
+                real-time inventory management, and admin dashboard.
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">React</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">MongoDB</button>
+              <button class="tools-box">Stripe</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="projects-briefs">
+          <div class="project-brief-con"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">E-Commerce Platform</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                A full-stack e-commerce solution with payment integration,
+                real-time inventory management, and admin dashboard.
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">React</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">MongoDB</button>
+              <button class="tools-box">Stripe</button>
+            </div>
+          </div>
+        </div>
+        <div class="projects-briefs">
+          <div class="project-brief-con4"></div>
+          <div class="project-details">
+            <div class="brief-header">
+              <p class="brief-hd">Portfolio Websites</p>
+            </div>
+            <div class="brief-body">
+              <p class="brief-bd">
+                I design modern, responsive portfolio websites that showcasse
+                personal brands and projects professionally
+              </p>
+            </div>
+            <div class="brief-tools">
+              <button class="tools-box">React</button>
+              <button class="tools-box">Node.js</button>
+              <button class="tools-box">JavaScripts</button>
+              <button class="tools-box">Stripe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="get-in-touch">
+      <div class="get-touch-header">
+        <p class="touch-hd">Get in Touch</p>
+        <div class="line-design"></div>
+        <p class="touch-sub-hd">
+          Have a project in mind or want to collaborate? Feel free to reach out!
+        </p>
+      </div>
+      <div class="contact-grid-1024-max">
+        <div class="contact-left-1024-max">
+          <div class="get-touch-body">
+            <div class="touch-body-header">
+              <p class="touch-body-hd">Let's work together</p>
+              <p class="touch-body-bd">
+                I'm always interested in hearing about new projects and
+                opportunities. Whether you have a question or just want to say
+                hi, I'll try my best to get back to you
+              </p>
+            </div>
+          </div>
+          <div class="my-contact-details">
+            <div class="detail-icon">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-message-circle-more-icon lucide-message-circle-more"
+                >
+                  <path
+                    d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719"
+                  />
+                  <path d="M8 12h.01" />
+                  <path d="M12 12h.01" />
+                  <path d="M16 12h.01" />
+                </svg>
+              </p>
+            </div>
+            <div class="details-info">
+              <p class="email-box">Email</p>
+              <p class="email">jamesemmy108@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="my-contact-details">
+            <div class="detail-icon">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-phone-icon lucide-phone"
+                >
+                  <path
+                    d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                  />
+                </svg>
+              </p>
+            </div>
+            <div class="details-info">
+              <p class="email-box">Phone</p>
+              <p class="email">+2347015771693</p>
+            </div>
+          </div>
+
+          <div class="my-contact-details">
+            <div class="detail-icon">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin-icon lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+              </p>
+            </div>
+            <div class="details-info">
+              <p class="email-box">Location</p>
+              <p class="email">Lagos Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right-1024-max">
+          <div class="input-fields">
+            <div class="name-field">
+              <p class="name">Name</p>
+              <input type="text" placeholder="Your name" class="name-input" />
+            </div>
+
+            <div class="name-field">
+              <p class="name">Email</p>
+              <input
+                type="email"
+                placeholder="your.email@example.com"
+                class="name-input"
+              />
+            </div>
+
+            <div class="name-field">
+              <p class="name">Message</p>
+              <textarea
+                name=""
+                id=""
+                class="message-input"
+                placeholder="Tell me about your project..."
+              ></textarea>
+            </div>
+            <button class="message-cta">
+              Send message
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-send-horizontal-icon lucide-send-horizontal"
+              >
+                <path
+                  d="M3.714 3.048a.498.498 0 0 0-.683.627l2.843 7.627a2 2 0 0 1 0 1.396l-2.842 7.627a.498.498 0 0 0 .682.627l18-8.5a.5.5 0 0 0 0-.904z"
+                />
+                <path d="M6 12h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="footer">
+      <div class="upper-footer">
+        <div class="details">
+          <p class="details-hd">James Emmy</p>
+          <p class="details-bd">Full Stack JavaScript Developer</p>
+        </div>
+        <div class="socials">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-linkedin-icon lucide-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-facebook-icon lucide-facebook"
+            >
+              <path
+                d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+              />
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="12"
+              height="12"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-twitter-icon lucide-twitter"
+            >
+              <path
+                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+              />
+            </svg>
+          </p>
+        </div>
+      </div>
+      <div class="divider-con">
+        <div class="divider"></div>
+      </div>
+      <div class="down-layer">
+        <p>
+          Made with
+          <span class="heart">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="10"
+              height="10"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-heart-icon lucide-heart"
+            >
+              <path
+                d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5"
+              />
+            </svg>
+          </span>
+          by James Emmy © 2026
+        </p>
       </div>
     </section>
   </body>
