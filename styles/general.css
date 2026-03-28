@@ -42,6 +42,7 @@ a:hover {
   padding: 0.8rem 2.2rem;
   box-shadow: 2rem -2rem 1rem rgba(255, 255, 255, 1);
   background-color: var(--primary-color);
+  z-index: 1000000000000000000;
 }
 .logo {
   font: 1rem;
@@ -211,23 +212,26 @@ a:hover {
     left: 0;
     height: 100vh;
     width: auto;
-    padding: 4rem 6rem 0 1rem;
+    padding: 2rem 6rem 0 1rem;
     background-color: white;
     z-index: 10000000;
     display: none;
     flex-direction: column;
-    margin-top: 2.5rem;
+    margin-top: 4rem;
   }
   .display-side-bar {
     display: flex;
   }
   .harmburger-nav a {
     color: var(--secondary-color);
-    font-weight: 400;
+    font-weight: 600;
   }
   .harmburger-nav ul {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
+  }
+  .harmburger-nav li {
+    list-style: none;
   }
 }
