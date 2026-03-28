@@ -20,14 +20,15 @@
   line-height: 1.4;
 }
 .projects-briefs {
-  margin: 2.5rem;
+  margin: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 0.4rem;
   padding-bottom: 1rem;
+  transition: border 0.4s ease;
 }
-/* .projects-briefs:last-child {
+.projects-briefs:last-child {
   margin-bottom: 0;
-} */
+}
 
 .project-brief-con {
   background-image: url("/images/ecommerce.jfif");
@@ -90,7 +91,20 @@
   color: rgba(59, 130, 246, 0.6);
   font-size: 1rem;
 }
-@media (min-width: 611px) and (max-width: 1023px) {
+
+@media (max-width: 767px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .grid-container {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
   .brief-hd {
     font-size: 2rem;
     font-weight: 600;
@@ -110,29 +124,13 @@
     padding: 0.8rem 1.6rem;
     font-size: 1.2rem;
   }
+}
+@media (min-width: 1024px) and (max-width: 1439px) {
   .grid-container {
     display: grid;
-    margin: 2.5rem;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-  }
-  .projects-briefs {
-    margin: 0;
-  }
-}
-@media (max-width: 836px) {
-  .grid-container {
-    display: block;
-  }
-}
-@media (min-width: 1024px) {
-  .grid-container {
-    display: grid;
-    justify-content: space-between;
-    margin: 0 4rem;
-    gap: 2.5rem;
-    padding-top: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
   }
   .projects-header {
     margin-bottom: 2rem;
@@ -143,17 +141,6 @@
   .brief-hd {
     font-size: 2rem;
   }
-  .projects-briefs {
-    margin: 0;
-    border-radius: 1.2rem;
-    padding-bottom: 2rem;
-  }
-  .project-brief-con,
-  .project-brief-con2,
-  .project-brief-con3,
-  .project-brief-con4 {
-    border-radius: 1.2rem;
-  }
   .brief-bd {
     font-size: 1.3rem;
     font-weight: 400;
@@ -161,5 +148,56 @@
   .brief-tools button {
     padding: 1rem 1rem;
     font-size: 1.2rem;
+  }
+  .projects-briefs:hover {
+    border: 1px solid var(--secondary-color);
+  }
+}
+@media (min-width: 1440px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem;
+    gap: 3rem;
+  }
+
+  .projects-header {
+    margin-bottom: 2rem;
+  }
+  .projects-hd {
+    font-size: 4rem;
+  }
+  .brief-hd {
+    font-size: 2rem;
+  }
+  .brief-bd {
+    font-size: 1.8rem;
+    font-weight: 400;
+  }
+  .brief-tools button {
+    padding: 1rem 1rem;
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 359px) {
+  .project-brief-con,
+  .project-brief-con2,
+  .project-brief-con3,
+  .project-brief-con4 {
+    height: 20vh;
+  }
+  .brief-tools {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .projects-hd {
+    font-size: 1.2rem;
+  }
+  .brief-hd {
+    font-size: 1.2rem;
+  }
+  .brief-bd {
+    font-size: 0.8rem;
   }
 }

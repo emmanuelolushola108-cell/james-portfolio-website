@@ -6,6 +6,11 @@
 html {
   font-size: 62.5%;
 }
+body,
+html {
+  scroll-behavior: smooth;
+  /* scroll-padding: 1000px; */
+}
 :root {
   --primary-color: #0f172a;
   --secondary-color: #3b82f6;
@@ -21,6 +26,14 @@ body {
   font-weight: 300;
   font-style: normal;
   background-color: #0c1220;
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: var(--secondary-color);
 }
 .header-container {
   display: flex;
@@ -64,14 +77,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-  background-color: var(--secondary-color);
+  background: none;
   border: 1px solid rgba(15, 23, 42, 0.4);
   border-radius: 0.2rem;
   color: white;
   padding: 0.2rem 0.8rem;
-}
-.button-con3:hover {
-  box-shadow: -2px 10px 60px var(--font-highlight);
 }
 .contact-cta:hover {
   box-shadow: -2px 10px 60px rgba(255, 255, 255, 0.1);
@@ -81,6 +91,47 @@ body {
   justify-content: center;
   align-items: center;
 }
+.tablet-view a {
+  transition: all 0.4s ease;
+}
+.message-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.switch-overlay {
+  display: flex;
+}
+.overlay-msg-box {
+  opacity: 0.9;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  background-color: var(--primary-color);
+  border-radius: 2rem;
+  border: 1px solid white;
+  z-index: 100000000000;
+  font-size: 2rem;
+  color: white;
+}
+
+.werty1-uio2 {
+  max-width: 2800px;
+  margin: 0 auto;
+  position: relative;
+}
+.harmburger-side-menu {
+  display: none;
+}
+
 @media (min-width: 611px) and (max-width: 1023px) {
   .button-con3 {
     display: none;
@@ -101,11 +152,6 @@ body {
 @media (min-width: 360px) and (max-width: 610px) {
   .right-section,
   .tablet-view {
-    display: none;
-  }
-}
-@media (max-width: 359px) {
-  body {
     display: none;
   }
 }
@@ -141,5 +187,47 @@ body {
   }
   .logo {
     font-size: 3rem;
+  }
+  .header-cta:hover {
+    box-shadow: -2px 10px 60px rgba(59, 130, 246, 0.4);
+  }
+  .tablet-view a:hover {
+    color: white;
+  }
+}
+@media (max-width: 250px) {
+  .logo {
+    font-size: 0.8rem;
+  }
+  .harmburger-menu {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .harmburger-side-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: auto;
+    padding: 4rem 6rem 0 1rem;
+    background-color: white;
+    z-index: 10000000;
+    display: none;
+    flex-direction: column;
+    margin-top: 2.5rem;
+  }
+  .display-side-bar {
+    display: flex;
+  }
+  .harmburger-nav a {
+    color: var(--secondary-color);
+    font-weight: 400;
+  }
+  .harmburger-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
   }
 }
