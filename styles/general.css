@@ -39,7 +39,7 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.8rem 2.2rem;
+  padding: 0rem 2.2rem;
   box-shadow: 2rem -2rem 1rem rgba(255, 255, 255, 1);
   background-color: var(--primary-color);
   z-index: 1000000000000000000;
@@ -234,4 +234,7 @@ a:hover {
   .harmburger-nav li {
     list-style: none;
   }
+}
+.logo {
+  width: 10rem;
 }
